@@ -15,9 +15,12 @@ public class ZipUtil {
 
 
     public static void main(String[] args) {
-        String sourceFolderPath = "/Users/akchi724/Work/ПВВ/Гостиниц тест/for_archive";
+//        Папка, из которой берётся zip-архив
+        String sourceFolderPath = "/Users/akchi724/Work/ПВВ/Гостиниц тест/little archive";
+//        Папка, на которой окажется zip-архив
         String zipFilePath = "/Users/akchi724/Work/ПВВ/Гостиниц тест/";
-        String zipFileName = "for_archive";
+//        Название zip архива
+        String zipFileName = "little_archive";
         try {
             createZipFromFolder(sourceFolderPath, zipFilePath + zipFileName + ".zip");
             System.out.println("Zip-архив успешно создан!");
